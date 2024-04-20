@@ -1,0 +1,9 @@
+.body{
+ /*
+* Created with https://www.css-gradient.com
+* Gradient link: https://www.css-gradient.com/?c1=57487d&c2=151718&gt=r&gd=dcc
+*/
+background: #57487D;
+background: radial-gradient(at center, #57487D, #151718);
+height: 100%;
+}
