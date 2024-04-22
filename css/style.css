@@ -1,6 +1,115 @@
-body{
-    background: #57487D;
-    background: radial-gradient(circle at center, #57487D, #151718);
-    min-height: 100vh; /* Asegura que el body tenga al menos la altura de la ventana del navegador */
-    margin: 0;
+body {
+  background: #57487d;
+  background: radial-gradient(circle at center, #57487d, #151718);
+  min-height: 100vh; /* Asegura que el body tenga al menos la altura de la ventana del navegador */
+  margin: 0;
+  -webkit-box-shadow: 3px 3px 10px 3px #dddddd;
+  -moz-box-shadow: 3px 3px 10px 3px #dddddd;
+  box-shadow: 3px 3px 10px 3px #dddddd;
+  font-size: xx-large;
+}
+
+main {
+  max-width: 1100px;
+  margin: 0 auto; /* Centra horizontalmente */
+  padding: 20px; /* Agrega espacio alrededor del contenido */
+  background-color: rgba(255, 255, 255, 0.034);
+  color: #151718;
+  border-radius: 0 0 2% 2%;
+  border-color: #0c74b6 1px;
+}
+
+/* ---- Targetas de estudio ----------*/
+
+.sesion {
+  background: #503ff1;
+  margin: 30px 0 30px 0;
+  padding: 0 40px 0 40px;
+  border-radius: 1vw;
+  border: 3px solid #a80cb6;
+  font-weight: 700;
+  color: #e8faf7;
+}
+
+.pda {
+  overflow-x: auto;
+  width: 100%;
+
+  table {
+    border-collapse: collapse;
+  }
+
+  table th,
+  table td {
+    border: 1px solid #ffff;
+  }
+
+  table tr:nth-child(n) {
+    background: #e3c2eb;
+  }
+
+  table tr:nth-child(2n) {
+    background: #eee;
+  }
+  table th {
+    background: #570843;
+    color: #eee;
+  }
+
+  table td:hover {
+    background: #ca9cd8;
+    color: rgb(105, 9, 101);
+  }
+}
+
+section h2 {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.introduccion {
+  background: #f3f3f3;
+  margin: 20px 0 20px 0;
+  padding: 0 20px 0 20px;
+  border-radius: 1vw;
+  border: 3px solid #0c74b6;
+}
+
+.lectura {
+  background: rgb(226, 248, 255);
+  margin: 20px 0 20px 0;
+  padding: 0 20px 0 20px;
+  border: 3px solid #0c74b6;
+  border-radius: 1vw;
+}
+
+.actividad {
+  background: rgb(255, 227, 236);
+  margin: 20px 0 20px 0;
+  padding: 0 20px 0 20px;
+  border-radius: 1vw;
+  border-left: #f7307d 0.2em solid;
+  border-right: #f7307d 0.2em solid;
+}
+
+.complemento {
+  background: rgb(255, 241, 128);
+  margin: 20px 0 20px 0;
+  padding: 0 20px 0 20px;
+  border: 3px solid #acebff;
+  border-radius: 1vw;
+}
+
+.cierre {
+  background: rgb(188, 245, 223);
+  margin: 20px 0 20px 0;
+  padding: 0 20px 0 20px;
+  border-radius: 1vw;
+  border: 3px solid #2dc58b;
+}
+
+footer {
+  text-align: center;
+  font-size: 50%;
+  color: burlywood;
 }
