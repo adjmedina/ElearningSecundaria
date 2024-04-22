@@ -10,16 +10,16 @@ body {
 }
 
 main {
-  max-width: 1100px;
+  max-width: 1200px;
   margin: 0 auto; /* Centra horizontalmente */
-  padding: 20px; /* Agrega espacio alrededor del contenido */
+  padding: 40px; /* Agrega espacio alrededor del contenido */
   background-color: rgba(255, 255, 255, 0.034);
   color: #151718;
   border-radius: 0 0 2% 2%;
   border-color: #0c74b6 1px;
 }
 
-/* ---- Targetas de estudio ----------*/
+/* ---- Tarjetas de estudio ----------*/
 
 .sesion {
   background: #503ff1;
