@@ -17,6 +17,11 @@ main {
   color: #151718;
   border-radius: 0 0 2% 2%;
   border-color: #0c74b6 1px;
+
+  h1 {
+    color: #f3f3f3;
+    text-align: center;
+  }
 }
 
 /* ---- Tarjetas de estudio ----------*/
@@ -65,6 +70,51 @@ main {
 section h2 {
   margin-top: 5px;
   margin-bottom: 5px;
+}
+
+.campo_lenguajes {
+  background: #ffcdcd;
+  margin: 20px 0 20px 0;
+  padding: 0 20px 0 20px;
+  border-radius: 1vw;
+  border: 3px solid #ff6969;
+
+  a {
+    color: #503ff1;
+  }
+  a:hover {
+    text-decoration: none;
+  }
+}
+
+.campo_saberes {
+  background: #bdeeff;
+  margin: 20px 0 20px 0;
+  padding: 0 20px 0 20px;
+  border-radius: 1vw;
+  border: 3px solid #0070c0;
+
+  a {
+    color: #503ff1;
+  }
+  a:hover {
+    text-decoration: none;
+  }
+}
+
+.campo_etica {
+  background: #dcf0c6;
+  margin: 20px 0 20px 0;
+  padding: 0 20px 0 20px;
+  border-radius: 1vw;
+  border: 3px solid #00b050;
+
+  a {
+    color: #503ff1;
+  }
+  a:hover {
+    text-decoration: none;
+  }
 }
 
 .sesion {
