@@ -141,7 +141,7 @@ section h2 {
   border: 3px solid #0c74b6;
   border-radius: 1vw;
 
-  table{
+  table {
     margin-left: auto;
     margin-right: auto;
     border-collapse: collapse;
@@ -162,13 +162,11 @@ section h2 {
   table th {
     background: #0c74b6;
     color: #eee;
-    
   }
 
   table td:hover {
     background: #ca9cd8;
     color: rgb(105, 9, 101);
-    
   }
 }
 
@@ -180,7 +178,7 @@ section h2 {
   border-left: #f7307d 0.2em solid;
   border-right: #f7307d 0.2em solid;
 
-  table{
+  table {
     margin-left: auto;
     margin-right: auto;
     border-collapse: collapse;
@@ -201,15 +199,12 @@ section h2 {
   table th {
     background: #f7307d;
     color: #eee;
-    
   }
 
   table td:hover {
     background: #ca9cd8;
     color: rgb(105, 9, 101);
-    
   }
-
 }
 
 .complemento {
@@ -227,6 +222,23 @@ section h2 {
     text-decoration: underline;
     font-weight: 700;
   }
+}
+
+.grafica {
+  max-width: 500px;
+  overflow: hidden;
+  background-color: #ffff;
+  padding: 0 5px 5px 5px;
+  margin: 15px auto;
+  border: 2px solid navy;
+
+  svg {
+    flex-wrap: calc(50);
+  }
+}
+
+.grafica:hover {
+  border: 2px solid rgb(189, 27, 68);
 }
 
 .cierre {

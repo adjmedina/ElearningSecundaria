@@ -10,6 +10,7 @@
       async
       src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
     ></script>
+    <script src="https://unpkg.com/function-plot/dist/function-plot.js"></script>
     <title>
       Sistemas de ecuaciones - Matemáticas - Elearnig Telesecundaria
     </title>
@@ -194,7 +195,7 @@
         como las <strong>leyes de los signos</strong>
       </section>
 
-      <section id="sesion1" class="sesion">
+      <section id="sesion6" class="sesion">
         <p>Sesión 6</p>
         <p>Tiempo: 55 minutos</p>
       </section>
@@ -372,10 +373,137 @@
           Mary ?
         </p>
       </section>
+
+      <section id="sesion6" class="sesion">
+        <p>Sesión 7</p>
+        <p>Tiempo: 55 minutos</p>
+      </section>
+
+      <section class="introduccion">
+        <h2>Introducción</h2>
+        <p>
+          Ahora nos adentraremos en el estudio de los sistemas de ecuaciones
+          lineales, una herramienta fundamental que nos permite abordar
+          problemas donde varias condiciones o variables interactúan
+          simultáneamente. Imagina que estás organizando una fiesta y necesitas
+          calcular la cantidad de refrescos y bocadillos para tus invitados,
+          considerando tanto el presupuesto como las preferencias de todos. Aquí
+          es donde los sistemas de ecuaciones lineales se vuelven esenciales,
+          permitiéndote encontrar soluciones que satisfagan múltiples requisitos
+          al mismo tiempo.
+        </p>
+        <p>
+          Durante esta sesión, aprenderás cómo representar estas situaciones
+          complejas mediante ecuaciones y cómo resolverlas utilizando métodos
+          como el de sustitución, igualación o reducción. ¿Te has preguntado
+          alguna vez cómo podrías usar estas técnicas para resolver dilemas
+          cotidianos o tomar decisiones más informadas? ¡Vamos a descubrirlo
+          juntos!"
+        </p>
+      </section>
+
+      <section class="lectura">
+        <h2>Lectura Requerida</h2>
+        <h3>Método gráfico</h3>
+        <p>
+          Un sistema de dos ecuaciones lineales con dos incógnitas es el
+          resultado de la intersección de dos rectas en el plano cartesiano.
+        </p>
+        <p>
+          Los sistemas de ecuaciones se pueden categorizar de acuerdo a como se
+          solucionan:
+        </p>
+        <p>
+          <strong>Solución Única:</strong> Este tipo de sistema ocurre cuando
+          las líneas representadas por las ecuaciones se interceptan en
+          exactamente un punto.
+        </p>
+        <div id="graf1" class="grafica">&nbsp;</div>
+        <p>
+          <strong>Sin Solución:</strong> Un sistema de ecuaciones es considerado
+          sin solución cuando las líneas son paralelas y, por lo tanto, nunca se
+          interceptan
+        </p>
+        <div id="graf2" class="grafica">&nbsp;</div>
+        <p>
+          <strong>Soluciones Múltiples:</strong> Finalmente, algunos sistemas
+          tienen infinitas soluciones. Esto sucede cuando las ecuaciones, aunque
+          puedan parecer diferentes, son esencialmente la misma línea
+        </p>
+        <div id="graf3" class="grafica">&nbsp;</div>
+        <p>
+          Comprender estos tipos nos ayuda a prever el comportamiento de las
+          ecuaciones en diferentes contextos y a aplicar el método de solución
+          más adecuado.
+        </p>
+      </section>
     </main>
     <footer>
       <!-- Pie de página con información adicional (opcional) -->
       Telesecundaria Ricardo Flores Magón
     </footer>
   </body>
+  <script type="text/javascript">
+    let contentsBounds = document.body.getBoundingClientRect();
+    let width = 500;
+    let height = 400;
+    let ratio = contentsBounds.width / width;
+
+    functionPlot({
+      target: "#graf1",
+      width,
+      height,
+      grid: true,
+      yAxis: { domain: [50, 52] },
+      xAxis: { domain: [16, 18] },
+      data: [
+        {
+          fn: "3x",
+          color: "red",
+        },
+        {
+          fn: "-x + 68",
+          color: "blue",
+        },
+      ],
+    });
+
+    functionPlot({
+      target: "#graf2",
+      width,
+      height,
+      grid: true,
+      yAxis: { domain: [-10, 10] },
+      xAxis: { domain: [-102, -80] },
+      data: [
+        {
+          fn: "-x-100",
+          color: "red",
+        },
+        {
+          fn: "-x-89",
+          color: "blue",
+        },
+      ],
+    });
+
+    functionPlot({
+      target: "#graf3",
+      width,
+      height,
+      grid: true,
+      yAxis: { domain: [-8, 4] },
+      xAxis: { domain: [-100, -90] },
+      data: [
+        {
+          fn: "-x-100",
+          color: "red",
+        },
+        {
+          fn: "-x-100",
+          color: "blue",
+        },
+      ],
+    });
+  </script>
 </html>
