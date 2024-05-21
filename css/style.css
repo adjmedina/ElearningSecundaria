@@ -132,6 +132,36 @@ section h2 {
   padding: 0 20px 0 20px;
   border-radius: 1vw;
   border: 3px solid #0c74b6;
+
+  table {
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse: collapse;
+  }
+  
+  table th,
+  table td {
+    border: 1px solid #0c74b6;
+    padding: 4px;
+  }
+
+  table tr:nth-child(n) {
+    background: #cedbff;
+  }
+
+  table tr:nth-child(2n) {
+    background: rgb(226, 248, 255);
+  }
+  table th {
+    background: #3054f7;
+    color: #eee;
+  }
+
+  table td:hover {
+    background: #ca9cd8;
+    color: rgb(105, 9, 101);
+  }
+
 }
 
 .lectura {
@@ -183,6 +213,7 @@ section h2 {
     margin-right: auto;
     border-collapse: collapse;
   }
+
   table th,
   table td {
     border: 1px solid #f7307d;
