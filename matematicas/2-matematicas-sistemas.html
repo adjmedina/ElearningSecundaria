@@ -390,15 +390,15 @@
           considerando tanto el presupuesto como las preferencias de todos. Aquí
           es donde los sistemas de ecuaciones lineales se vuelven esenciales,
           permitiéndote encontrar soluciones que satisfagan múltiples requisitos
-          al mismo tiempo.
+          al mismo tiempo. Por ejemplo: $$\begin{cases} 5x - 3y = 11 \\ 4x + y =
+          2 \end{cases}$$
         </p>
         <p>
           Durante esta sesión, aprenderás cómo representar estas situaciones
           complejas mediante ecuaciones y cómo resolverlas utilizando métodos
           como el de sustitución, igualación o reducción. ¿Te has preguntado
           alguna vez cómo podrías usar estas técnicas para resolver dilemas
-          cotidianos o tomar decisiones más informadas? ¡Vamos a descubrirlo
-          juntos!"
+          cotidianos o tomar decisiones más informadas?
         </p>
       </section>
 
@@ -435,7 +435,7 @@
           Pero. ¿Cómo podemos resolver un sistema de ecuaciones por el método
           gráfico?
         </p>
-        <h3>Método Gráfico</h3>
+        <h3>Aplicación del método gráfico</h3>
         <p>
           Para explicar como resolver este método tomaremos como ejemplo el
           sistema de ecuaciones
@@ -453,7 +453,132 @@
           >
           \(y = - 2 + x\)
         </p>
+
+        <p><strong>2. sustituir los valores de x en una tabla</strong></p>
+
+        <p><strong>Ecuación 1:</strong> \(y = 10 - x\) <br /></p>
+        <table>
+          <tr>
+            <th>X</th>
+            <th>\(y = 10 - x\)</th>
+            <th>Y</th>
+          </tr>
+          <tr>
+            <td>0</td>
+            <td>\(y = 10 - 0\)</td>
+            <td>10</td>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>\(y = 10 - 1\)</td>
+            <td>9</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>\(y = 10 - 2\)</td>
+            <td>8</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>\(y = 10 - 3\)</td>
+            <td>7</td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>\(y = 10 - 4\)</td>
+            <td>6</td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td>\(y = 10 - 5\)</td>
+            <td>5</td>
+          </tr>
+          <tr>
+            <td>6</td>
+            <td>\(y = 10 - 6\)</td>
+            <td>4</td>
+          </tr>
+          <tr>
+            <td>7</td>
+            <td>\(y = 10 - 7\)</td>
+            <td>3</td>
+          </tr>
+          <tr>
+            <td>8</td>
+            <td>\(y = 10 - 8\)</td>
+            <td>2</td>
+          </tr>
+          <tr>
+            <td>9</td>
+            <td>\(y = 10 - 9\)</td>
+            <td>1</td>
+          </tr>
+        </table>
+
+        <p><strong>Ecuación 2:</strong> \(y = - 2 + x\) <br /></p>
+        <table>
+          <tr>
+            <th>X</th>
+            <th>\(y = - 2 + x\)</th>
+            <th>Y</th>
+          </tr>
+          <tr>
+            <td>0</td>
+            <td>\(y = - 2 + 0\)</td>
+            <td>-2</td>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>\(y = - 2 + 1\)</td>
+            <td>-1</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>\(y = - 2 + 2\)</td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>\(y = - 2 + 3\)</td>
+            <td>1</td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>\(y = - 2 + 4\)</td>
+            <td>2</td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td>\(y = - 2 + 5\)</td>
+            <td>3</td>
+          </tr>
+          <tr>
+            <td>6</td>
+            <td>\(y = - 2 + 6\)</td>
+            <td>4</td>
+          </tr>
+          <tr>
+            <td>7</td>
+            <td>\(y = - 2 + 7\)</td>
+            <td>5</td>
+          </tr>
+          <tr>
+            <td>8</td>
+            <td>\(y = - 2 + 8\)</td>
+            <td>6</td>
+          </tr>
+          <tr>
+            <td>9</td>
+            <td>\(y = - 2 + 9\)</td>
+            <td>7</td>
+          </tr>
+        </table>
+        <p>
+          <strong>3. Grafica los datos obtenidos en un plano cartesiano</strong>
+        </p>
+        <div id="graf4" class="grafica">&nbsp;</div>
       </section>
+
       <section id="sesion6" class="sesion">
         <p>Sesión 8</p>
         <p>Tiempo: 55 minutos</p>
@@ -522,6 +647,25 @@
         },
         {
           fn: "-x-100",
+          color: "blue",
+        },
+      ],
+    });
+
+    functionPlot({
+      target: "#graf4",
+      width,
+      height,
+      grid: true,
+      yAxis: { domain: [-1, 11] },
+      xAxis: { domain: [2, 11] },
+      data: [
+        {
+          fn: "10-x",
+          color: "red",
+        },
+        {
+          fn: "x-2",
           color: "blue",
         },
       ],
