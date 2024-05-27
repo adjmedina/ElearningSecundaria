@@ -340,6 +340,10 @@ figure {
   }
 }
 
+.oculto{
+  display: none;
+}
+
 footer {
   text-align: center;
   font-size: 50%;

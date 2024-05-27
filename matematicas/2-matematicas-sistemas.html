@@ -579,9 +579,144 @@
         <div id="graf4" class="grafica">&nbsp;</div>
       </section>
 
-      <section id="sesion6" class="sesion">
-        <p>Sesión 8</p>
-        <p>Tiempo: 55 minutos</p>
+      <section id="sesion8" class="sesion">
+        <div>
+          <p>Sesión 8</p>
+          <p>Tiempo: 55 minutos</p>
+        </div>
+        <p>
+          Practica solucionando sistemas de ecuaciones por el método gráfico
+        </p>
+      </section>
+
+      <section class="actividad">
+        <h2>Actividad</h2>
+        <p>Resuelve gráficamente el siguientes sistemas de ecuaciones.</p>
+        <ol>
+          <li>$$\begin{cases} x - y = 1 \\ -2x + y = 7 \end{cases}$$</li>
+          <li>$$\begin{cases} x + y = -8 \\ 2x - y = -4 \end{cases}$$</li>
+        </ol>
+        <p>Para cada cada tabla usa valores de x = -5 hasta x =5</p>
+        <table>
+          <tr>
+            <th>x</th>
+            <th>Ecuación</th>
+            <th>y</th>
+          </tr>
+          <tr>
+            <td>-5</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+          </tr>
+          <tr>
+            <td>...</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+          </tr>
+        </table>
+        <hr />
+        <h3>Comprueba tus resultados</h3>
+        <div id="app">
+          <form id="FormularioGraficas">
+            <dir>
+              <label>Ingresa la ecuación 1 depejada en la forma ax + b</label>
+              <input
+                type="text"
+                id="texto1"
+                placeholder="Ingresa la ecuación"
+              />
+            </dir>
+            <div>
+              <label>Ingresa la ecuación 2 depejada en la forma ax + b</label>
+              <input
+                type="text"
+                id="texto2"
+                placeholder="Ingresa la ecuación"
+              />
+            </div>
+            <button type="submit">Comprobar</button>
+          </form>
+          <div id="resultado" class="grafica"></div>
+        </div>
+      </section>
+      <section id="sesion9" class="sesion">
+        <div>
+          <p>Sesión 9</p>
+          <p>Tiempo: 55 minutos</p>
+        </div>
+        <p>Sistemas de ecuaciones por el método de sustitución</p>
+      </section>
+      <section class="introduccion">
+        <h2>Introducción</h2>
+        <p>
+          El método de sustitución es uno de los enfoques más utilizados para
+          resolver sistemas de ecuaciones. Su idea central es reemplazar una de
+          las incógnitas en una ecuación por una expresión en función de la otra
+          incógnita.
+        </p>
+      </section>
+      <section class="lectura">
+        <h2>Lectura</h2>
+        <h3>Solución de sistemas de ecuaciones por el método de sustitución</h3>
+        <p>
+          Para explicar como solucionar un sistema de ecuaciones por este método
+          utilizaremos el sistema de ecuaciones:
+        </p>
+        <p>$$\begin{cases} 2x + y = 8 \\ 3x - 2y = 5 \end{cases}$$</p>
+        <p>A continuación, te presento los pasos básicos del método</p>
+        <h4>1) Despejar la literal más simple en la ecuación 1</h4>
+        <p>En este caso despejaremos la literal "y" de la ecuación 1</p>
+        <p>A) \( {\color{red} 2x } + y =8\)</p>
+        <p>B) \(y =8 {\color{blue} - 2x }\)</p>
+        <h4>2) Sustituir el valor de "y" en la ecuación 2</h4>
+        <p>A) \( 3x - 2{\color{red} y } = 5\)</p>
+        <p>B) \( 3x - 2{\color{red} (8-2x) } = 5\)</p>
+        <p>C) \( 3x {\color{blue} -16+4x } = 5\)</p>
+        <p>D) \( 7x - 16 = 5\)</p>
+        <p>E) \( 7x = 5 + 16\)</p>
+        <p>F) \( {\color{blue} 7 }x = 21\)</p>
+        <p>G) \( x = 21/7\)</p>
+        <p>\( x = 3\)</p>
+        <h4>3) Sustituir el valor de 3 ecuación 1 despejada</h4>
+        <p>A) \(y =8 {\color{blue} - 2x }\)</p>
+        <p>B) \(y =8 - 2{\color{blue} (3) }\)</p>
+        <p>C) \(y =8 - {\color{blue} 6 }\)</p>
+        <p>\(y =2\)</p>
+        <h4>4) Verificar la Solución</h4>
+        <p>Usamos los resultados obtenidos \(y =2\) y \(x =3\)</p>
+        <p>En la ecuación 1</p>
+        <p>\(2x +y=8\)</p>
+        <p>\(2(3) + 2 = 8 \)</p>
+        <p>\(6+2=8\)</p>
+        <p>\(8=8\)</p>
+        <p>En la ecuación 2</p>
+        <p>\(3x - 2y = 5\)</p>
+        <p>\(3(3) - 2(2) = 5 \)</p>
+        <p>\(9-4 = 5\)</p>
+        <p>\(5=5\)</p>
+        <hr />
+        <p>
+          El método de sustitución es especialmente útil cuando una de las
+          incógnitas tiene un coeficiente igual a 1. <br />A lo largo de este
+          tema, exploraremos ejemplos y ejercicios donde aplicaremos el
+          procedimiento antes visto
+        </p>
+      </section>
+      <section class="actividad">
+        <h2>Actividad</h2>
+        <p>Resuelve el siguiente ejercicio usando el método de sustitución</p>
+        <p>$$\begin{cases} 2x +y= 7 \\ 2x - y= 1 \end{cases}$$</p>
+        <div>
+          <button onclick="muestrarespuesta1()">Verificar</button>
+          <p id="verificar1" class="oculto">
+            el Resultado es: $$\begin{cases} x = 7 \\ y= 1 \end{cases}$$
+          </p>
+        </div>
       </section>
     </main>
     <footer>
@@ -670,5 +805,36 @@
         },
       ],
     });
+
+    document
+      .getElementById("FormularioGraficas")
+      .addEventListener("submit", function (event) {
+        event.preventDefault();
+        let fn1 = document.getElementById("texto1").value;
+        let fn2 = document.getElementById("texto2").value;
+        functionPlot({
+          target: "#resultado",
+          width,
+          height,
+          grid: true,
+          yAxis: { domain: [-50, 50] },
+          xAxis: { domain: [-50, 50] },
+          data: [
+            {
+              fn: fn1,
+              color: "red",
+            },
+            {
+              fn: fn2,
+              color: "blue",
+            },
+          ],
+        });
+      });
+
+    function muestrarespuesta1() {
+      const div = document.getElementById("verificar1");
+      div.classList.toggle("oculto");
+    }
   </script>
 </html>
