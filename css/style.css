@@ -1,6 +1,7 @@
 body {
   background: #57487d;
   background: radial-gradient(circle at center, #57487d, #151718);
+  background-image: url(background.jpeg);
   min-height: 100vh; /* Asegura que el body tenga al menos la altura de la ventana del navegador */
   margin: 0;
   -webkit-box-shadow: 3px 3px 10px 3px #dddddd;
@@ -13,9 +14,9 @@ main {
   max-width: 1200px;
   margin: 0 auto; /* Centra horizontalmente */
   padding: 40px; /* Agrega espacio alrededor del contenido */
-  background-color: rgba(255, 255, 255, 0.034);
+  background-color: rgba(255, 255, 255, 0.767);
   color: #151718;
-  border-radius: 0 0 1em 1em;
+  border-radius: 0 0 0.5em 0.5em;
   border-color: #0c74b6 1px;
 
   h1 {
@@ -42,6 +43,7 @@ main {
 
   table {
     border-collapse: collapse;
+    border: #56045e 3px solid;
   }
 
   table th,
@@ -61,7 +63,7 @@ main {
     color: #eee;
   }
 
-  table td:hover {
+  table tr:hover {
     background: #ca9cd8;
     color: rgb(105, 9, 101);
   }
@@ -116,14 +118,31 @@ section h2 {
     text-decoration: none;
   }
 }
+.tarea {
+  background: radial-gradient(circle at center, #ffe0b2, #ffa64d);
+  border: 3px solid #ff8533;
+  border-radius: 1vw;
+  margin: 20px 0 20px 0;
+  padding: 0 20px 0 20px;
+}
 
 .sesion {
-  background: #9ef8f4;
+  background: linear-gradient(to right, #b0f2c2, #abedc6, #a8e9ca, #a4e5ce);
+  border: 3px solid #66cdaa;
   margin: 20px 0 20px 0;
   padding: 0 20px 0 20px;
   border-radius: 1vw;
-  border: 3px solid #0c74b6;
+  color: #02642e;
   font-weight: 700;
+  div {
+    column-count: 2;
+    column-gap: 30%;
+    margin-top: 15px;
+    p {
+      margin-top: 0px;
+      margin-bottom: 0;
+    }
+  }
 }
 
 .introduccion {
@@ -133,12 +152,18 @@ section h2 {
   border-radius: 1vw;
   border: 3px solid #0c74b6;
 
+  h2,
+  h3,
+  h4 {
+    color: #2ca8e2;
+  }
+
   table {
     margin-left: auto;
     margin-right: auto;
     border-collapse: collapse;
   }
-  
+
   table th,
   table td {
     border: 1px solid #0c74b6;
@@ -157,11 +182,10 @@ section h2 {
     color: #eee;
   }
 
-  table td:hover {
+  table tr:hover {
     background: #ca9cd8;
     color: rgb(105, 9, 101);
   }
-
 }
 
 .lectura {
@@ -170,6 +194,10 @@ section h2 {
   padding: 0 20px 0 20px;
   border: 3px solid #0c74b6;
   border-radius: 1vw;
+
+  h2 {
+    color: #0b6299;
+  }
 
   table {
     margin-left: auto;
@@ -194,7 +222,7 @@ section h2 {
     color: #eee;
   }
 
-  table td:hover {
+  table tr:hover {
     background: #ca9cd8;
     color: rgb(105, 9, 101);
   }
@@ -203,10 +231,13 @@ section h2 {
 .actividad {
   background: rgb(255, 227, 236);
   margin: 20px 0 20px 0;
-  padding: 0 20px 0 20px;
+  padding: 10px 20px 0 20px;
   border-radius: 1vw;
-  border-left: #f7307d 0.2em solid;
-  border-right: #f7307d 0.2em solid;
+  border: #f7307d 3px solid;
+
+  h2 {
+    color: #da2c6e;
+  }
 
   table {
     margin-left: auto;
@@ -232,7 +263,7 @@ section h2 {
     color: #eee;
   }
 
-  table td:hover {
+  table tr:hover {
     background: #ca9cd8;
     color: rgb(105, 9, 101);
   }
@@ -278,6 +309,35 @@ section h2 {
   padding: 0 20px 0 20px;
   border-radius: 1vw;
   border: 3px solid #2dc58b;
+}
+
+figure {
+  text-align: center;
+  img {
+    border: #570843 2px solid;
+    border-radius: 5px;
+  }
+  figcaption {
+    display: none;
+  }
+}
+
+.video {
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+  border-radius: 5px;
+  iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+  }
 }
 
 footer {
