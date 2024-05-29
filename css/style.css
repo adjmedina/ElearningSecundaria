@@ -20,7 +20,7 @@ main {
   border-color: #0c74b6 1px;
 
   h1 {
-    color: #f3f3f3;
+    color: #2040d1;
     text-align: center;
   }
 }
@@ -211,7 +211,7 @@ section h2 {
   }
 
   table tr:nth-child(n) {
-    background: #e3c2eb;
+    background: #fafbfc;
   }
 
   table tr:nth-child(2n) {
@@ -223,8 +223,8 @@ section h2 {
   }
 
   table tr:hover {
-    background: #ca9cd8;
-    color: rgb(105, 9, 101);
+    background: #5d90fd;
+    color: rgb(33, 4, 163);
   }
 }
 
@@ -340,7 +340,7 @@ figure {
   }
 }
 
-.oculto{
+.oculto {
   display: none;
 }
 
