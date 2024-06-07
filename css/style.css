@@ -1,7 +1,8 @@
 body {
   background: #57487d;
   background: radial-gradient(circle at center, #57487d, #151718);
-  background-image: url(background.jpeg);
+  background-image: url(Patron.svg);
+  background-size: 300px 80px;
   min-height: 100vh; /* Asegura que el body tenga al menos la altura de la ventana del navegador */
   margin: 0;
   -webkit-box-shadow: 3px 3px 10px 3px #dddddd;
