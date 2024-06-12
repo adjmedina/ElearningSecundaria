@@ -60,6 +60,20 @@
     </main>
 
     <footer>
+      <script type="text/javascript">
+        // Crear una nueva instancia de SpeechSynthesisUtterance
+        var mensaje = new SpeechSynthesisUtterance();
+
+        // Establecer el texto que se desea que el navegador lea
+        mensaje.text =
+          "Regular dental care includes brushing, flossing, and dental check-ups.";
+
+        // Opcional: Configurar propiedades como la voz y el idioma
+        //mensaje.lang = "es-MX"; // Código de idioma para español de España
+        mensaje.lang = "en-US";
+        // Hacer que el navegador hable
+        window.speechSynthesis.speak(mensaje);
+      </script>
       <!-- Pie de página con información adicional (opcional) -->
       Telesecundaria Ricardo Flores Magón
     </footer>
